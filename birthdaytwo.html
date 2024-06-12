@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>Happy Birthday, [Her Name]!</h1>
+            <p>
+                I'm so grateful to have you as my neighbor and friend. Your kindness, beauty, and amazing spirit brighten up our neighborhood and my life. On this special day, I wish you all the happiness, love, and joy that your heart can hold. May all your dreams come true and may this year be filled with wonderful moments and unforgettable memories.
+            </p>
+            <p>
+                Here's to celebrating you and the wonderful person you are. Have an incredible birthday!
+            </p>
+            <p>
+                With love and best wishes,<br>
+                [Your Name]
+            </p>
+        </div>
+    </div>
+    <audio id="background-music" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgroundMusic = document.getElementById('background-music');
+            backgroundMusic.play().catch(error => {
+                console.error('Autoplay prevented:', error);
+                alert("Click OK to start the birthday music!");
+                backgroundMusic.play();
+            });
+        });
+    </script>
+</body>
+</html>

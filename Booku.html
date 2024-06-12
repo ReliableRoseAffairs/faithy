@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Deposit - Secure Meetups</title>
+    <link rel="stylesheet" href="booku.css">
+</head>
+<body>
+
+    <header>
+        <h1>Trust Deposit - Secure Meetups</h1>
+    </header>
+
+    <main>
+        <section id="trust-deposit">
+            <h2>Trust Deposit Process</h2>
+            <p>To ensure safety and trust during meetups, we have implemented a trust deposit system. Here are some key points:</p>
+            <ul>
+                <li>The participant deposits a certain amount of money before the meetup.</li>
+                <li>The deposited money is held securely by an intermediary and is not accessible by either party during the meetup.</li>
+                <li>After the meetup, if there are no issues, the participant confirms the successful meetup, and the money is refunded.</li>
+                <li>If there are any issues, a dispute can be raised, and the intermediary will review the matter.</li>
+            </ul>
+            <p>This system ensures that the money is safe and cannot be used by the other party unless the meetup is successfully completed without any problems.</p>
+        </section>
+
+        <section id="trust-questionnaire">
+            <h2>Trust Questionnaire</h2>
+            <p>Please answer the following questions about trust:</p>
+            <form id="trustForm">
+                <div class="form-group">
+                    <label>1. Do you trust the meetup platform?</label>
+                    <div>
+                        <input type="radio" id="q1-yes" name="q1" value="yes" required>
+                        <label for="q1-yes">Yes</label>
+                        <input type="radio" id="q1-no" name="q1" value="no" required>
+                        <label for="q1-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>2. Do you trust the intermediary to handle your money?</label>
+                    <div>
+                        <input type="radio" id="q2-yes" name="q2" value="yes" required>
+                        <label for="q2-yes">Yes</label>
+                        <input type="radio" id="q2-no" name="q2" value="no" required>
+                        <label for="q2-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>3. Do you feel safe using this deposit system?</label>
+                    <div>
+                        <input type="radio" id="q3-yes" name="q3" value="yes" required>
+                        <label for="q3-yes">Yes</label>
+                        <input type="radio" id="q3-no" name="q3" value="no" required>
+                        <label for="q3-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>4. Would you recommend this system to others?</label>
+                    <div>
+                        <input type="radio" id="q4-yes" name="q4" value="yes" required>
+                        <label for="q4-yes">Yes</label>
+                        <input type="radio" id="q4-no" name="q4" value="no" required>
+                        <label for="q4-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>5. Do you believe this system enhances meetup safety?</label>
+                    <div>
+                        <input type="radio" id="q5-yes" name="q5" value="yes" required>
+                        <label for="q5-yes">Yes</label>
+                        <input type="radio" id="q5-no" name="q5" value="no" required>
+                        <label for="q5-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>6. Have you used a similar system before?</label>
+                    <div>
+                        <input type="radio" id="q6-yes" name="q6" value="yes" required>
+                        <label for="q6-yes">Yes</label>
+                        <input type="radio" id="q6-no" name="q6" value="no" required>
+                        <label for="q6-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>7. Do you find this system easy to use?</label>
+                    <div>
+                        <input type="radio" id="q7-yes" name="q7" value="yes" required>
+                        <label for="q7-yes">Yes</label>
+                        <input type="radio" id="q7-no" name="q7" value="no" required>
+                        <label for="q7-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>8. Would you use this system for future meetups?</label>
+                    <div>
+                        <input type="radio" id="q8-yes" name="q8" value="yes" required>
+                        <label for="q8-yes">Yes</label>
+                        <input type="radio" id="q8-no" name="q8" value="no" required>
+                        <label for="q8-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>9. Do you have any concerns about this system?</label>
+                    <div>
+                        <input type="radio" id="q9-yes" name="q9" value="yes" required>
+                        <label for="q9-yes">Yes</label>
+                        <input type="radio" id="q9-no" name="q9" value="no" required>
+                        <label for="q9-no">No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>10. Do you think this system is necessary?</label>
+                    <div>
+                        <input type="radio" id="q10-yes" name="q10" value="yes" required>
+                        <label for="q10-yes">Yes</label>
+                        <input type="radio" id="q10-no" name="q10" value="no" required>
+                        <label for="q10-no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-method">Select Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                        <option value="crypto">Cryptocurrency</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="intermediary">Select Intermediary</label>
+                    <select id="intermediary" name="intermediary" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="escrow-service-1">Escrow Service 1</option>
+                        <option value="escrow-service-2">Escrow Service 2</option>
+                        <option value="escrow-service-3">Escrow Service 3</option>
+                        <option value="escrow-service-4">Escrow Service 4</option>
+                    </select>
+                </div>
+
+                <p><strong>Note:</strong> Please choose the payment method as the intermediary to ensure the money is securely held until the meetup is successfully completed.</p>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trust and Meetup Safety Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="bookus.js"></script>
+</body>
+</html>
